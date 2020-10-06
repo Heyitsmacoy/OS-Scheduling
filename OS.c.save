@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<conio.h>
+
+int menu();
+
+
+int main(){
+   while(1){
+    switch(menu())
+    {
+        case 1: system("cls");system("fcfs.c");break;
+        default:break;
+    }
+   }
+}
+
+int menu()
+{
+    system("cls");
+    int choice;
+    printf("OS SCHEDULING\n");
+    printf("1.FCFS\n");
+    printf("2.SJF\n");
+    printf("3.SRTF\n");
+    printf("4.NPP\n");
+    printf("5.PP\n");
+    printf("6.RR\n");
+    printf("7.EXIT");
+    printf("\n Enter scheduling to use: ");
+    scanf("%d",&choice);
+    return choice;
+}
